@@ -1,18 +1,16 @@
 #include <stdint.h>
 
-#include "toggle.h"
+#include "stm32f7xx.h"
+
+#include "stm32f7xx_hal_rcc.h"
+#include "stm32f7xx_hal_gpio.h"
 
 int main(void) {
 	uint32_t i = 0;
 
 	while(1) {
-		toggle();
 		i++;
 	}
-}
-
-void SystemInit(void) {
-	return;
 }
 
 void _exit(int i) {
